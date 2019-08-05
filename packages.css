@@ -1,0 +1,129 @@
+@font-face {
+    font-family:"cousine";
+    src:url("custom-fonts/cousine-Regular.tff") format("truetype");
+    font-weight:400;
+}
+@font-face {
+    font-family:"cousine";
+    src:url("custom-fonts/cousine-Bold.tff") format("truetype");
+    font-weight:700;
+}
+
+/* body{
+    background:url(plans-background.jpg);
+    
+}  */
+main{
+    margin-top:3.5rem;
+}
+
+.package {
+    padding:2rem 1rem;
+    margin:1rem 0;
+    border:4px black solid;
+    width:80%;
+    background:rgba(187, 253, 255,0.8);
+    border-right:none;   
+    position:relative;
+}
+.package:hover,
+.package:active {
+    border-color: #ff5454;
+    box-shadow:2px 2px 4px 1px rgba(0,0,0,0.5);
+}
+/* .clearfix {
+    clear:both;
+} */
+.premium {
+    background:rgba(0, 63, 0,0.8);
+    float:right;
+}
+.free {
+    background:rgba(236, 230, 230,0.8);
+    border-left:none;
+    border-right:4px black solid;
+}
+.plus {
+    float:right;
+    overflow:hidden;
+}
+.badge {
+    background:#003f00;
+    color:wheat;
+    padding:0.6rem;
+    border-radius:8px;
+    width:12rem;
+    text-align:center;
+    font-size:0.8rem;
+    box-shadow:2px 2px 2px 1px rgba(0,0,0,0.5);
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:1;
+    transform:rotateZ(45deg) translateX(2.7rem) translateY(-1rem);
+    transform-origin:center;
+}
+.clearfix {
+    clear:both;
+}
+.h1 {
+    color:black;
+}
+.last .h1 {
+    color:white;
+}
+.h2 {
+    color:#9e9e9e;
+} 
+.last .h2 {
+    color:white;
+}
+.p {
+    color:#0e4f1f;
+    background:white;
+    padding:1rem;
+    border:1px solid #0e4f1f;
+    font-size:1.2rem;
+    /* font-family:"cousine",monospace; */
+    font-weight:normal;
+    line-height:2;
+}
+.package a {
+    text-decoration-line:none;
+    display:block;
+}
+.background {
+    background:url("Images/plans-background.jpg");
+    background-size:cover;
+    filter:grayscale(40%);
+    width:100vw;
+    height:100vh;
+    position:fixed;
+    z-index:-1;
+}
+
+@media (min-width:40rem){
+    .badge {
+        font-size:1rem;
+        width:12rem;
+        right:1.2rem;
+        transform:rotateZ(45deg) translateX(3.6rem) translateY(-2rem);
+    }
+    main{
+        max-width:1500px;
+        margin-top:3.5rem;
+        padding-top:3.5rem;
+    }
+}
+@media (min-width:1500px){
+    .package {
+        border-right:4px black solid;
+        margin:2rem 0;
+    }
+    .free {
+        border-left:4px black solid;
+    }
+    .badge{
+        font-size:1.2rem;
+    }
+}
